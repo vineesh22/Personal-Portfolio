@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/77c0654f68.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo3.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <br /><br /><br />
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span class="full-name">Vineesh Gupta</span>
+            <br class="desktop-break" />Uppala.
+          </h1>
+          <h4>IIT Bhubaneswar</h4>
+          <h5>4th Year Cse</h5>
+        </div>
+      </div>
+    </div>
+    <!----------about------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user1.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello! I’m Vineesh Gupta Uppala, a 4th year Computer Science
+              student at IIT Bhubaneswar with a passion for technology and
+              problem-solving. Currently,preparing for SDE roles to leverage my
+              skills in building efficient and robust software systems. Whether
+              it's exploring new algorithms or working with diverse teams, I am
+              always eager to push my boundaries and grow as a software
+              engineer.I enjoy working on innovative projects that challenge my
+              skills.<br />
+              <br />When I’m not coding, you might find me exploring the latest
+              developments in artificial intelligence and blockchain or
+              enhancing my coding profiles with new challenges.<br />
+              <br /><b>Let’s connect and create something amazing together!</b>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Data Structures and Algorithms</span><br />C,C++,Python
+                </li>
+                <li>
+                  <span>Web Development</span
+                  ><br />HTML,CSS,Javascript,Node.js,FastAPI
+                </li>
+                <li>
+                  <span>Machine Learning</span
+                  ><br />Pandas,Numpy,Scikitlearn,Mathplotlib,OpenCV
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Aug(2024)-Present</span><br />Gen AI intern at Samsung
+                  Prism
+                </li>
+                <li>
+                  <span>July(2024)-Aug(2024)</span><br />Backend Developer at
+                  Healpcare
+                </li>
+                <li>
+                  <span>June(2024)-Aug(2024)</span><br />ML intern at IIT
+                  Bhubaneswar
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-present</span><br />B.tech CSE at IIT Bhubaneswar
+                </li>
+                <li>
+                  <span>2019-2021</span><br />Intermediate at Sri Chaitanya
+                </li>
+                <li>
+                  <span>2018-2019</span><br />Secondary Education at Sri
+                  Chaitanya
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------services------------>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>UI/UX and Web Design</h2>
+            <p class="ex">
+              I provide full-stack web development services, from designing
+              intuitive and user-friendly interfaces using HTML, CSS, and
+              JavaScript frameworks like React, to building robust backend
+              systems with Node.js or FastAPI. Whether it’s developing RESTful
+              APIs, integrating databases, or deploying applications on cloud
+              platforms, I ensure that every web solution is optimized for
+              performance, scalability, and accessibility.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Machine Learning Models</h2>
+            <p>
+              Leveraging libraries like TensorFlow, Keras, and Scikit-learn, I
+              develop and deploy machine learning models tailored to your needs.
+              My expertise includes building predictive models, recommendation
+              systems, and natural language processing (NLP) applications. I
+              offer end-to-end solutions, from data cleaning and feature
+              engineering to model training, evaluation, and deployment,
+              ensuring accurate and scalable results for your business.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-hive"></i>
+            <h2>Blockchain Development</h2>
+            <p>
+              I specialize in developing decentralized applications (DApps) and
+              smart contracts using blockchain platforms like Ethereum. My
+              services include creating secure and efficient smart contracts
+              using Solidity, integrating them with web interfaces, and
+              deploying blockchain-based solutions. I also offer consultation on
+              key management and security best practices for blockchain
+              projects, ensuring robust and secure transactions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------portfolio--------->
+
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Projects</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3>Song Recommendation System</h3>
+              <p>
+                Built AI-powered chatbot to recommend songs based on real-time
+                sentiment analysis of user inputs.Integrated IBM Tone Analyzer
+                and Last.fm APIs to analyze conversation sentiments and
+                dynamically suggest music.
+              </p>
+              <a href="https://github.com/vineesh22?tab=repositories"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Ticket Booking Website</h3>
+              <p>
+                Engineered a seamless movie ticket booking platform using
+                React.js for dynamic frontend interactions, Express.js for
+                robust backend API integration, and MySQL database for efficient
+                data storage and retrieval.
+              </p>
+              <a href="https://github.com/vineesh22/Book_Your_Show"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpg" />
+            <div class="layer">
+              <h3>NaviVoice App</h3>
+              <p>
+                Developed a voice-activated assistant using Python, leveraging
+                libraries such as SpeechRecognition and pyttsx3 to enhance user
+                interactions through speech recognition and text-to-speech
+                functionality.
+              </p>
+              <a href="https://github.com/vineesh22?tab=repositories"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------Contact--------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i>vineeshguptau@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>(91+)7893438412</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/vineeshgupta.uppala"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/VineeshGupta224?t=9N2odC1-oMRArO6XScWTaQ&s=08"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/vineeshguptauppala/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/uppala-vineesh-gupta-b615b525b/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/My-Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Created by Vineesh Gupta Uppala with love<i
+            class="fa-solid fa-heart"
+          ></i
+          >.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyNkPUQ-D4FHzUV8TuDfNiDQKQsRou0kTFQ-83tsnfZyNi95spcA5vgSx4e3pbdH895eQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
